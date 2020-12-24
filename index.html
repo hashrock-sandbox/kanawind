@@ -12,22 +12,31 @@
             transform-style: preserve-3d;
             perspective: 500px;
         }
-        .emoji{
+        #emoji{
             width: 5rem;
             height: 5rem;
             transform-origin: 7rem;
             text-align: center;
+            cursor: pointer;
         }
     </style>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./out.css">
+
 </head>
 <body>
-    <!-- <div class="emoji ストンクルッ→シュッ">
-        😘
-    </div> -->
-    <div class="emoji ピョン">
+    <div id="emoji" class="ピョン">
         😘
     </div>
+    <script>
+        document.querySelector("#emoji").addEventListener("click", (ev)=>{
+            console.log(ev)
+            const el = ev.target
+            el.style.animation = 'none';
+            el.offsetHeight; /* trigger reflow */
+            el.style.animation = null; 
+        })
+    
+        </script>    
 </body>
 </html>

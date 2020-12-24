@@ -44,3 +44,13 @@ for (let a of pattern) {
         }
     }
 }
+
+for (let a of pattern) {
+    for (let b of pattern) {
+        for (let c of pattern) {
+            for (let d of pattern) {
+                fs.appendFileSync("./out.css",genClass([a, b, c, d]))
+            }
+        }
+    }
+}
