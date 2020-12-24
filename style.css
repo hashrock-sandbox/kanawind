@@ -1,42 +1,167 @@
 @keyframes ストン {
-    0% {
-        transform: scale(1, 1) translate(0%, -100%);
-    }
-  
-    100% {
-        transform: scale(1, 1) translate(0%, 0%);
-    }
+  0% {
+    transform: scale(1, 1) translate(0%, -100%);
   }
 
+  100% {
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+}
+@keyframes スッ {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes パッ {
+  0% {
+    transform: scale(0, 0) translate(0%, 0%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1, 1) translate(0%, 0%);
+    opacity: 1;
+  }
+}
+@keyframes ピョン {
+  0% {
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+
+  50% {
+    transform: scale(1, 1) translate(0%, -20%);
+  }
+  100% {
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+}
+@keyframes フワッ {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1) translate(0%, 0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2, 2) translate(0%, 0%);
+  }
+}
+
 @keyframes クルッ {
-0% {
+  0% {
     transform: rotateY(0deg);
-}
+  }
 
-20% {
+  20% {
     transform: rotateY(180deg);
-}
-100% {
+  }
+  100% {
     transform: rotateY(359deg);
-}
+  }
 }
 
+/* */
 @keyframes シュッ→ {
-    0% {
-        transform: scale(1, 1) translate(0%, 0%);
-        opacity: 1;
-    }
-  
-    100% {
-        transform: scale(1, 1) translate(200%, 0%);
-        opacity: 0;
-    }
+  0% {
+    transform: scale(1, 1) translate(0%, 0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1) translate(200%, 0%);
+    opacity: 0;
+  }
+}
+@keyframes シュッ↑ {
+  0% {
+    transform: scale(1, 1) translate(0%, 0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1) translate(0%, -200%);
+    opacity: 0;
+  }
 }
 
+@keyframes シュッ← {
+  0% {
+    transform: scale(1, 1) translate(0%, 0%);
+    opacity: 1;
+  }
 
+  100% {
+    transform: scale(1, 1) translate(-200%, 0%);
+    opacity: 0;
+  }
+}
+
+@keyframes シュッ↓ {
+  0% {
+    transform: scale(1, 1) translate(0%, 0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1) translate(0%, 200%);
+    opacity: 0;
+  }
+}
+/* reverse */
+
+@keyframes →シュッ {
+  0% {
+    transform: scale(1, 1) translate(-200%, 0%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1) translate(0%, 0%);
+    opacity: 1;
+  }
+}
+@keyframes ↑シュッ {
+  0% {
+    transform: scale(1, 1) translate(0%, 200%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1) translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes ←シュッ {
+  0% {
+    transform: scale(1, 1) translate(200%, 0%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1, 1) translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes ↓シュッ {
+  0% {
+    transform: scale(1, 1) translate(0%, -200%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1) translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+/* 
 .ストンクルッ→シュッ{
     animation:
         ストン 0.25s ease-in 0s forwards,
         クルッ 1s ease 0.25s forwards,
         シュッ→ 1s ease 1.25s forwards;
-}
+} */
